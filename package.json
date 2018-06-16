@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Builder for custom pencil stencil collections",
   "main": "./src/index.js",
+  "bin": {
+    "psb": "./bin/psb"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
