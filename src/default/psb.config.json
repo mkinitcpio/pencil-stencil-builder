@@ -1,0 +1,5 @@
+{
+    "rootDir": "./src",
+    "buildDir": "./build",
+    "packDir": "./package"
+}
