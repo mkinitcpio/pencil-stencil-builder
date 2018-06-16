@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-const defaultConfig = require('./default/psb.config');
-const psb = require('./psb');
+const defaultConfig = require('./src/default/psb.config');
+const psb = require('./src/psb');
 const merge = require('deepmerge');
 
 let config = null;
