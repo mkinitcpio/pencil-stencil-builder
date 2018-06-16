@@ -1,5 +1,12 @@
 {
     "rootDir": "./src",
     "buildDir": "./build",
-    "packDir": "./package"
+    "packDir": "./package",
+    "stencilMetadata": {
+        "id": "",
+        "displayName": "",
+        "description": "",
+        "author":"",
+        "url":""
+    }
 }
