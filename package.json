@@ -1,6 +1,6 @@
 {
   "name": "pencil-stencil-builder",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Builder for custom pencil stencil collections",
   "main": "./index.js",
   "bin": {
