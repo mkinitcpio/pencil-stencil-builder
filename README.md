@@ -24,6 +24,6 @@ All fields from config file are optional.
 
 ## Todo
   * Readme
-  * Build feature
+  * ~~Build feature~~
   * Packaging for distribution feature
   * Resolve icons path
