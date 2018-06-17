@@ -2,7 +2,7 @@
   "name": "pencil-stencil-builder",
   "version": "0.2.0",
   "description": "Builder for custom pencil stencil collections",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "bin": {
     "psb": "./bin/psb"
   },
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mkinitcpio/pencil-stencil-builder#readme",
   "dependencies": {
-    "deepmerge": "2.1.1"
+    "deepmerge": "2.1.1",
+    "recursive-readdir": "2.2.2"
   }
 }

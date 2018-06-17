@@ -1,5 +1,5 @@
 {
-    "rootDir": "./src",
+    "rootDir": "./",
     "buildDir": "./build",
     "packDir": "./package",
     "stencilMetadata": {
