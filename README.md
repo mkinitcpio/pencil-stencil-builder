@@ -3,7 +3,22 @@ Builder for custom pencil stencil collections. Separate every shape that you wan
 ## Note
   Project in active development!
 ## Installation
-  ~~
+  ```
+  npm i pencil-stencil-builder
+  ```
+## Run  
+  Into **package.json**
+  ```javascript
+  script: {
+    "build": "psb build"
+  }
+  ```
+  or
+  ```
+  psb build
+  ```
+  if you install package globally
+  
 ## Documentation
   Create config **psb.config.json** into root project folder:
   ```javascript
