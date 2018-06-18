@@ -3,7 +3,7 @@ const path = require('path');
 const recursive = require('recursive-readdir');
 const fileConfig = { encoding: 'utf-8' };
 
-const build = async (config) => {
+const build = async config => {
     const buildDir = path.join('./', config.buildDir);
     const packDir = path.join('./', config.packDir);
     const ignores = ['.git', 'node_modules', buildDir, packDir];
@@ -28,19 +28,15 @@ const build = async (config) => {
     fs.writeFileSync(pathToCompiledFile, resultDefinitonData, fileConfig);
 }
 
-const pasteMetadata = (fileData, metadata) => {
-    fileData = fileData.replace('#id#', metadata.id)
-                       .replace('#name#', metadata.displayName)
-                       .replace('#description#', metadata.description)
-                       .replace('#author#', metadata.author)
-                       .replace('#url#', metadata.url);
-
-    return fileData;
-}
+const pasteMetadata = (fileData, metadata) => fileData.replace('#id#', metadata.id)
+                                                      .replace('#name#', metadata.displayName)
+                                                      .replace('#description#', metadata.description)
+                                                      .replace('#author#', metadata.author)
+                                                      .replace('#url#', metadata.url);
 
 const pasteShapes = (definitonData, shapesData) => definitonData.replace('#shapes#', shapesData);
 
-const pack = (config) => {
+const pack = config => {
     console.log('pack ->', config);
 }
 
