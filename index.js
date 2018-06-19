@@ -9,16 +9,16 @@ const configName = 'psb.config.json';
 const isCustomConfigExist = fs.existsSync(configName);
 
 if (isCustomConfigExist) {
-    const workingDir = process.env.PWD;
+    const workingDir = process.cwd();
     config = require(path.join(workingDir, configName));
     config = merge(defaultConfig, config);
 } else {
     config = defaultConfig;
 }
 
-try {
-    const arg = process.argv[2];
+const arg = process.argv[2];
+if (psb[arg]) {
     psb[arg](config);
-} catch {
-    throw new Error(`Unexpected argument: ${arg}`);
+} else {
+    throw new Error(`Unexpected argument ${arg}`);
 }
