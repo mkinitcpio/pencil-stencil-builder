@@ -6,20 +6,8 @@ Builder for custom pencil stencil collections. Separate every shape that you wan
   ```
   npm i pencil-stencil-builder
   ```
-## Run  
-  Into **package.json**
-  ```javascript
-  script: {
-    "build": "psb build"
-  }
-  ```
-  or
-  ```
-  psb build
-  ```
-  if you install package globally
-  
-## Documentation
+
+## Config
   Create config **psb.config.json** into root project folder:
   ```javascript
 {
@@ -36,10 +24,20 @@ Builder for custom pencil stencil collections. Separate every shape that you wan
 }
 ```
 All fields from config file are optional.
+  
+## Commands
+  Build project in **buildDir** from **psb.config.json**
+  ```
+  psb build
+  ```
+  Watch changes and rebuild project in **rootDir** from **psb.config.json**
+  ```
+  psb watch
+  ```
 
 ## Todo
   * Readme
   * ~~Build feature~~
-  * Watch feature
+  * ~~Watch feature~~
   * Packaging for distribution feature
   * Resolve icons path
