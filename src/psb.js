@@ -17,15 +17,15 @@ const build = async config => {
 
     const pathToTemplate = path.join(__dirname, 'default/Definition.template.xml');
     const definitionTemplate = fs.readFileSync(pathToTemplate, fileConfig);
-    const definitonData = pasteMetadata(definitionTemplate, config.stencilMetadata);
-    const resultDefinitonData = pasteShapes(definitonData, resultShapesData);
+    const definitionData = pasteMetadata(definitionTemplate, config.stencilMetadata);
+    const resultDefinitionData = pasteShapes(definitionData, resultShapesData);
 
     if (!fs.existsSync(config.buildDir)) {
         fs.mkdirSync(config.buildDir);
     }
 
     const pathToCompiledFile = path.join(config.buildDir, 'Definition.xml');
-    fs.writeFileSync(pathToCompiledFile, resultDefinitonData, fileConfig);
+    fs.writeFileSync(pathToCompiledFile, resultDefinitionData, fileConfig);
 }
 
 const pasteMetadata = (fileData, metadata) => fileData.replace('#id#', metadata.id)
@@ -34,7 +34,7 @@ const pasteMetadata = (fileData, metadata) => fileData.replace('#id#', metadata.
                                                       .replace('#author#', metadata.author)
                                                       .replace('#url#', metadata.url);
 
-const pasteShapes = (definitonData, shapesData) => definitonData.replace('#shapes#', shapesData);
+const pasteShapes = (definitionData, shapesData) => definitionData.replace('#shapes#', shapesData);
 
 const pack = config => {
     console.log('pack ->', config);
