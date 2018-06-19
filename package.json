@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/mkinitcpio/pencil-stencil-builder#readme",
   "dependencies": {
+    "chokidar": "2.0.4",
     "deepmerge": "2.1.1",
     "recursive-readdir": "2.2.2"
   }
