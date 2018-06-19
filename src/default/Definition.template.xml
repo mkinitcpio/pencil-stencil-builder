@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Shapes xmlns="http://www.evolus.vn/Namespace/Pencil"  
-        xmlns:p="http://www.evolus.vn/Namespace/Pencil"  
-        xmlns:svg="http://www.w3.org/2000/svg"  
-        xmlns:xlink="http://www.w3.org/1999/xlink"  
-  
+<Shapes xmlns="http://www.evolus.vn/Namespace/Pencil"
+        xmlns:p="http://www.evolus.vn/Namespace/Pencil"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+
         id="#id#"
-        displayName="#name#"  
-        description="#description#"  
-        author="#author#"  
-        url="#url#">  
+        displayName="#name#"
+        description="#description#"
+        author="#author#"
+        url="#url#">
         #shapes#
 </Shapes>
