@@ -40,5 +40,6 @@ All fields from config file are optional.
 ## Todo
   * Readme
   * ~~Build feature~~
+  * Watch feature
   * Packaging for distribution feature
   * Resolve icons path
